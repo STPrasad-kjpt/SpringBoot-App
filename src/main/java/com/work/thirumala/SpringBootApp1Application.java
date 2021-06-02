@@ -6,6 +6,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class SpringBootApp1Application {
+	private static final String REST_URL = "https://www.equifax.com/getScores";
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(SpringBootApp1Application.class, args);
