@@ -6,6 +6,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class SpringBootApp1Application {
+	private Map<String,Object> cache = new HashMap<String,Object>();
 	private static final String REST_URL = "https://www.equifax.com/getScores";
 
 	public static void main(String[] args) {
@@ -13,6 +14,10 @@ public class SpringBootApp1Application {
 		//changes for HIS-134
 		int a = 10;
 		context.close();
+	}
+	
+	public void loadToCache(){
+		//logic
 	}
 
 }
