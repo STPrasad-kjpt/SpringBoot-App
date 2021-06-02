@@ -9,6 +9,7 @@ public class SpringBootApp1Application {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(SpringBootApp1Application.class, args);
+		//changes for HIS-134
 		context.close();
 	}
 
