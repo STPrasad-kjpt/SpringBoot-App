@@ -8,9 +8,12 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class SpringBootApp1Application {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext context = SpringApplication.run(SpringBootApp1Application.class, args);
-		//changes for HIS-134
-		context.close();
+		SpringApplication.run(SpringBootApp1Application.class, args);
+	}
+	
+	//Feature-200 related changes
+	public void doProcess(){
+		//logic goes here
 	}
 
 }
